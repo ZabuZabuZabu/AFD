@@ -6,5 +6,6 @@ SCT_DeepEIoU2/
 
 SCT_DHMS/
 
+checkpoints/
 detection/
 embedding/
