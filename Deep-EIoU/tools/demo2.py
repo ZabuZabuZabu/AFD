@@ -16,7 +16,7 @@ from yolox.utils import fuse_model, get_model_info, postprocess
 from yolox.utils.visualize import plot_tracking
 from yolox.tracking_utils.timer import Timer
 
-from tracker.Deep_EIoU2 import Deep_EIoU2
+from tracker.AFD import AFD
 from reid.torchreid.utils import FeatureExtractor
 import torchvision.transforms as T
 
@@ -25,7 +25,7 @@ IMAGE_EXT = [".jpg", ".jpeg", ".webp", ".bmp", ".png"]
 
 
 def make_parser():
-    parser = argparse.ArgumentParser("DeepEIoU2 Demo")
+    parser = argparse.ArgumentParser("AFD Demo")
     parser.add_argument("-expn", "--experiment-name", type=str, default=None)
     parser.add_argument("-n", "--name", type=str, default=None, help="model name")
 
@@ -83,7 +83,7 @@ def make_parser():
     parser.add_argument("--track_low_thresh", default=0.1, type=float, help="lowest detection threshold valid for tracks")
     parser.add_argument("--new_track_thresh", default=0.7, type=float, help="new track thresh")
     parser.add_argument("--track_buffer", type=int, default=60, help="the frames for keep lost tracks")
-    parser.add_argument("--match_thresh", type=float, default=0.8, help="matching threshold for tracking")
+    parser.add_argument("--match_thresh", type=float, default=0.5, help="matching threshold for tracking")
     parser.add_argument("--aspect_ratio_thresh", type=float, default=1.6, help="threshold for filtering out boxes of which aspect ratio are above the given value.")
     parser.add_argument('--min_box_area', type=float, default=10, help='filter out tiny boxes')
     parser.add_argument("--nms_thres", type=float, default=0.7, help='nms threshold')
@@ -93,6 +93,16 @@ def make_parser():
     parser.add_argument("--with-reid", dest="with_reid", default=True, action="store_true", help="use Re-ID flag.")
     parser.add_argument('--proximity_thresh', type=float, default=0.5, help='threshold for rejecting low overlap reid matches')
     parser.add_argument('--appearance_thresh', type=float, default=0.25, help='threshold for rejecting low appearance similarity reid matches')
+
+    #AFD para
+    parser.add_argument("--output_dir", type=str, default=None, help="directory to save the output results")  # 追加
+    parser.add_argument("--emb_dir", type=str, default=None, help="directory for gt feature")  # 追加
+    parser.add_argument("--association_para", type=float, default=0.4, help="high parameter for association")  # 追加
+    parser.add_argument("--for_thresh", type=float, default=0.9, help="threshold for position vector distance") #追加
+    parser.add_argument("--edge_margin", type=float, default=100, help="margin size for eliminating bbox in edge") #追加
+    parser.add_argument("--magnification1", type=float, default=0.1, help="magnification for GED") #追加
+    parser.add_argument("--magnification2", type=float, default=0.1, help="magnification for vector selection") #追加    
+    parser.add_argument("--num_vectors", type=int, default=4, help="number of vectors") #追加    
     return parser
 
 
@@ -192,7 +202,7 @@ def imageflow_demo(predictor, extractor, vis_folder, current_time, args):
     vid_writer = cv2.VideoWriter(
         save_path, cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(width), int(height))
     )
-    tracker = Deep_EIoU2(args, frame_rate=30)
+    tracker = AFD(args, frame_rate=30)
     timer = Timer()
     frame_id = 1 #オリジナルは0だった
     results = []

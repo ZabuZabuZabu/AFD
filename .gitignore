@@ -20,8 +20,6 @@ sportsmot_publish/
 
 SportsMOT_Videos/
 
-TrackEval/
-
 calcurate_Displacement_proto.py
 calcurater.py
 cuda_device_count.py
