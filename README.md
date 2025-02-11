@@ -1,5 +1,5 @@
 # AFD
-Association with Formation DIstance
+Association with Formation Distance
 
 ## Setup Instructions
 
