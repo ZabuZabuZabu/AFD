@@ -928,4 +928,28 @@ close(5)                                = 0
 access(".git/objects/db/9aae7871c6513ced3dc997cf0fa53a2bfee761", F_OK) = 0
 utimensat(AT_FDCWD, ".git/objects/db/9aae7871c6513ced3dc997cf0fa53a2bfee761", NULL, 0) = 0
 close(4)                                = 0
-newfstatat(AT_FDCWD, "git_trace.log", 
+newfstatat(AT_FDCWD, "git_trace.log", {st_mode=S_IFREG|0644, st_size=101555, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "git_trace.log", O_RDONLY) = 4
+mmap(NULL, 101555, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7236a6396000
+access(".git/objects/d2/02fecfa8d89de8fad177cb8371767fd5a106c2", F_OK) = -1 ENOENT (No such file or directory)
+getpid()                                = 1818550
+openat(AT_FDCWD, ".git/objects/d2/tmp_obj_dreqaQ", O_RDWR|O_CREAT|O_EXCL, 0444) = 5
+write(5, "x\1\355}\353s\333\306\222\357\375\354\277\202\345\375\242\244,\0213x\337*\357\271\212D\333\212e\321"..., 4096) = 4096
+write(5, "Vk\327\363@5\"\7\336\226P\0035r@\262G)b\341\261+!g\242\6BD\317\305\245\242"..., 4096) = 4096
+write(5, "\3650\234\17\335\212\26 \35\331A\337\232@Tj\255D\276\36Zb\242w\246\254\273wp\362s\31"..., 2858) = 2858
+close(5)                                = 0
+link(".git/objects/d2/tmp_obj_dreqaQ", ".git/objects/d2/02fecfa8d89de8fad177cb8371767fd5a106c2") = 0
+unlink(".git/objects/d2/tmp_obj_dreqaQ") = 0
+munmap(0x7236a6396000, 101555)          = 0
+close(4)                                = 0
+write(3, "DIRC\0\0\0\2\0\0\1wg\252\362\0052\341\nSg\252\362\0052\341\nS\0\0\0000"..., 47873) = 47873
+write(3, "G\213\253C\316\356\314\242U\207x\236\317\7\0\344\274^H\202", 20) = 20
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/zabu/Deep-EIoU/.git/index.lock", {st_mode=S_IFREG|0644, st_size=47893, ...}, 0) = 0
+rename("/home/zabu/Deep-EIoU/.git/index.lock", "/home/zabu/Deep-EIoU/.git/index") = 0
+access(".git/hooks/post-index-change", X_OK) = -1 ENOENT (No such file or directory)
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x15), ...}, AT_EMPTY_PATH) = 0
+close(1)                                = 0
+getpid()                                = 1818550
+exit_group(0)                           = ?
++++ exited with 0 +++
