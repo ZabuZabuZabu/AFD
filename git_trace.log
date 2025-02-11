@@ -1,0 +1,931 @@
+execve("/usr/bin/git", ["git", "add", "."], 0x7ffedb16be10 /* 51 vars */) = 0
+brk(NULL)                               = 0x584107c82000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fff9db105f0) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7236a6477000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/glibc-hwcaps/x86-64-v3/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/glibc-hwcaps/x86-64-v3", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/glibc-hwcaps/x86-64-v2/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/glibc-hwcaps/x86-64-v2", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/haswell/x86_64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/haswell/x86_64", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/haswell/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/haswell", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/x86_64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/x86_64", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/tls", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/haswell/x86_64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/haswell/x86_64", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/haswell/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/haswell", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/x86_64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/x86_64", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/cuda-12.1/lib64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/cuda-12.1/lib64", 0x7fff9db0f810, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=71463, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 71463, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7236a6465000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7236a63ce000
+mmap(0x7236a63d0000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7236a63d0000
+mmap(0x7236a643b000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7236a643b000
+mmap(0x7236a6463000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7236a6463000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7236a63b2000
+mprotect(0x7236a63b4000, 98304, PROT_NONE) = 0
+mmap(0x7236a63b4000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7236a63b4000
+mmap(0x7236a63c5000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7236a63c5000
+mmap(0x7236a63cc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7236a63cc000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\315A\vq\17\17\tLh2\355\331Y1\0m"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7236a6000000
+mprotect(0x7236a6028000, 2023424, PROT_NONE) = 0
+mmap(0x7236a6028000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7236a6028000
+mmap(0x7236a61bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7236a61bd000
+mmap(0x7236a6216000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7236a6216000
+mmap(0x7236a621c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7236a621c000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7236a63af000
+arch_prctl(ARCH_SET_FS, 0x7236a63af740) = 0
+set_tid_address(0x7236a63afa10)         = 1818550
+set_robust_list(0x7236a63afa20, 24)     = 0
+rseq(0x7236a63b00e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7236a6216000, 16384, PROT_READ) = 0
+mprotect(0x7236a63cc000, 4096, PROT_READ) = 0
+mprotect(0x7236a6463000, 4096, PROT_READ) = 0
+mprotect(0x584107713000, 16384, PROT_READ) = 0
+mprotect(0x7236a64b1000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7236a6465000, 71463)           = 0
+openat(AT_FDCWD, "/dev/null", O_RDWR)   = 3
+close(3)                                = 0
+rt_sigprocmask(SIG_UNBLOCK, [PIPE], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getrandom("\x5b\x8a\x95\x6c\x22\x9a\xcf\x72", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x584107c82000
+brk(0x584107ca3000)                     = 0x584107ca3000
+newfstatat(AT_FDCWD, "/usr/share/locale", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6784496, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 6784496, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7236a5800000
+close(3)                                = 0
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/home/zabu/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/home/zabu/.gitconfig", R_OK)   = 0
+openat(AT_FDCWD, "/home/zabu/.gitconfig", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+read(3, "[user]\n\tname = Zabu\n\temail = sd2"..., 8192) = 53
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+getcwd("/misc/dl00/zabu/Deep-EIoU", 129) = 26
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 255)  = 21
+read(3, "", 234)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU/.git/commondir", 0x7fff9db0fe80, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("/misc/dl00/zabu/Deep-EIoU/.git/objects", X_OK) = 0
+access("/misc/dl00/zabu/Deep-EIoU/.git/refs", X_OK) = 0
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 1047
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 1047
+newfstatat(AT_FDCWD, ".git/commondir", 0x7fff9db0ff70, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 293
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+getcwd("/misc/dl00/zabu/Deep-EIoU", 129) = 26
+newfstatat(AT_FDCWD, ".git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/commondir", 0x7fff9db0ff30, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/home/zabu/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/home/zabu/.gitconfig", R_OK)   = 0
+openat(AT_FDCWD, "/home/zabu/.gitconfig", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+read(3, "[user]\n\tname = Zabu\n\temail = sd2"..., 8192) = 53
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+access(".git/config", R_OK)             = 0
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 293
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+getcwd("/misc/dl00/zabu/Deep-EIoU", 129) = 26
+chdir("/misc/dl00/zabu/Deep-EIoU")      = 0
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/home/zabu/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/home/zabu/.gitconfig", R_OK)   = 0
+openat(AT_FDCWD, "/home/zabu/.gitconfig", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+read(3, "[user]\n\tname = Zabu\n\temail = sd2"..., 8192) = 53
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+access(".git/config", R_OK)             = 0
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=293, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 293
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+readlink(".git/index", 0x584107c865f0, 32) = -1 EINVAL (Invalid argument)
+getcwd("/misc/dl00/zabu/Deep-EIoU", 129) = 26
+newfstatat(AT_FDCWD, "/misc/dl00/zabu/Deep-EIoU", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/zabu/Deep-EIoU", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/home/zabu/Deep-EIoU/.git/index.lock", O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = 3
+rt_sigaction(SIGINT, {sa_handler=0x5841075ee650, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x5841075ee650, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x5841075ee650, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x5841075ee650, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x5841075ee650, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7236a6042520}, 8) = 0
+getpid()                                = 1818550
+openat(AT_FDCWD, ".git/index", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=47855, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 47855, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7236a646b000
+close(4)                                = 0
+munmap(0x7236a646b000, 47855)           = 0
+access("/home/zabu/.config/git/ignore", R_OK) = -1 ENOENT (No such file or directory)
+access(".git/info/exclude", R_OK)       = 0
+openat(AT_FDCWD, ".git/info/exclude", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=240, ...}, AT_EMPTY_PATH) = 0
+read(4, "# git ls-files --others --exclud"..., 240) = 240
+close(4)                                = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7236a62ae000
+getdents64(4, 0x7236a62ae040 /* 19 entries */, 1048576) = 680
+openat(AT_FDCWD, ".gitignore", O_RDONLY|O_NOFOLLOW) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=255, ...}, AT_EMPTY_PATH) = 0
+read(5, "SportsMOT/\n\n__pycache__/\n\ndrow_l"..., 255) = 255
+close(5)                                = 0
+brk(0x584107cc4000)                     = 0x584107cc4000
+openat(AT_FDCWD, "Deep-EIoU/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7236a5eff000
+getdents64(5, 0x7236a5eff040 /* 14 entries */, 1048576) = 464
+openat(AT_FDCWD, "Deep-EIoU/.gitignore", O_RDONLY|O_NOFOLLOW) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=110, ...}, AT_EMPTY_PATH) = 0
+read(6, "interpolation_DeepEIoU2/\n\ninterp"..., 110) = 110
+close(6)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/tools/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7236a56ff000
+getdents64(6, 0x7236a56ff040 /* 19 entries */, 1048576) = 728
+openat(AT_FDCWD, "Deep-EIoU/tools/.gitignore", O_RDONLY|O_NOFOLLOW) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=607, ...}, AT_EMPTY_PATH) = 0
+read(7, "DePA_T_wgt.py\nADD_T_wgt.py\nADD_T"..., 607) = 607
+close(7)                                = 0
+getdents64(6, 0x7236a56ff040 /* 25 entries */, 1048576) = 1024
+getdents64(6, 0x7236a56ff040 /* 0 entries */, 1048576) = 0
+munmap(0x7236a56ff000, 1052672)         = 0
+close(6)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/tracker/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x584107dc5000)                     = 0x584107dc5000
+getdents64(6, 0x584107ca49b0 /* 15 entries */, 1048576) = 496
+openat(AT_FDCWD, "Deep-EIoU/tracker/.gitignore", O_RDONLY|O_NOFOLLOW) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=85, ...}, AT_EMPTY_PATH) = 0
+read(7, "ADD.py\nAFD_new.py\nDeep_EIoU2_wot"..., 85) = 85
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/tracker/tracking_utils/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+brk(0x584107ec5000)                     = 0x584107ec5000
+getdents64(7, 0x584107da4c00 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/tracker/tracking_utils/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(7, 0x584107da4c00 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+getdents64(6, 0x584107ca49b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=42, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x584107ca49b0 /* 3 entries */, 1048576) = 88
+openat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=92, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4ca0 /* 6 entries */, 1048576) = 176
+openat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/.gitignore", O_RDONLY|O_NOFOLLOW) = 8
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=24, ...}, AT_EMPTY_PATH) = 0
+read(8, "for_debag/\n\ntrack_vis/\n\n", 24) = 24
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x584107fc6000)                     = 0x584107fc6000
+getdents64(8, 0x584107ea52a0 /* 19 entries */, 1048576) = 864
+getdents64(8, 0x584107ea52a0 /* 28 entries */, 1048576) = 1344
+getdents64(8, 0x584107ea52a0 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+getdents64(7, 0x584107da4ca0 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+getdents64(6, 0x584107ca49b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=78, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x584107ea52a0 /* 5 entries */, 1048576) = 152
+openat(AT_FDCWD, "Deep-EIoU/reid/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=89, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 4 entries */, 1048576) = 144
+openat(AT_FDCWD, "Deep-EIoU/reid/build/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=29, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+getdents64(9, 0x5841080a5390 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=32, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841082c6000)                     = 0x5841082c6000
+getdents64(10, 0x5841081a53d0 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 11
+newfstatat(11, "", {st_mode=S_IFDIR|0755, st_size=61, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841083c6000)                     = 0x5841083c6000
+getdents64(11, 0x5841082a5410 /* 3 entries */, 1048576) = 112
+getdents64(11, 0x5841082a5410 /* 0 entries */, 1048576) = 0
+close(11)                               = 0
+getdents64(10, 0x5841081a53d0 /* 0 entries */, 1048576) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+close(10)                               = 0
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+close(9)                                = 0
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+brk(0x584107fc6000)                     = 0x584107fc6000
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=29, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+getdents64(9, 0x5841080a5390 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=32, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841082c6000)                     = 0x5841082c6000
+getdents64(10, 0x5841081a53d0 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 11
+newfstatat(11, "", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841083c6000)                     = 0x5841083c6000
+getdents64(11, 0x5841082a5410 /* 3 entries */, 1048576) = 80
+getdents64(11, 0x5841082a5410 /* 0 entries */, 1048576) = 0
+close(11)                               = 0
+getdents64(10, 0x5841081a53d0 /* 0 entries */, 1048576) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+close(10)                               = 0
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+close(9)                                = 0
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+brk(0x584107fc6000)                     = 0x584107fc6000
+close(8)                                = 0
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid.egg-info/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=34, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 3 entries */, 1048576) = 80
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=156, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 10 entries */, 1048576) = 296
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=53, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+getdents64(8, 0x584107fa5350 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=67, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+getdents64(9, 0x5841080a5390 /* 5 entries */, 1048576) = 144
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841082c6000)                     = 0x5841082c6000
+getdents64(10, 0x5841081a53d0 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(10, 0x5841081a53d0 /* 0 entries */, 1048576) = 0
+close(10)                               = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(10, 0x5841081a53d0 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(10, 0x5841081a53d0 /* 0 entries */, 1048576) = 0
+close(10)                               = 0
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+close(9)                                = 0
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=67, ...}, AT_EMPTY_PATH) = 0
+getdents64(8, 0x584107fa5350 /* 5 entries */, 1048576) = 144
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+getdents64(9, 0x5841080a5390 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+close(9)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(9, 0x5841080a5390 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+close(9)                                = 0
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+brk(0x584107fc6000)                     = 0x584107fc6000
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=55, ...}, AT_EMPTY_PATH) = 0
+getdents64(8, 0x584107fa5350 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 9
+newfstatat(9, "", {st_mode=S_IFDIR|0755, st_size=105, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841081c6000)                     = 0x5841081c6000
+getdents64(9, 0x5841080a5390 /* 5 entries */, 1048576) = 176
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(9, 0x5841080a5390 /* 0 entries */, 1048576) = 0
+close(9)                                = 0
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+brk(0x584107fc6000)                     = 0x584107fc6000
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+brk(0x5841080c6000)                     = 0x5841080c6000
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=65, ...}, AT_EMPTY_PATH) = 0
+getdents64(8, 0x584107fa5350 /* 4 entries */, 1048576) = 120
+openat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+getdents64(6, 0x584107ea52a0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/yolox/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=125, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x584107ea52a0 /* 8 entries */, 1048576) = 232
+openat(AT_FDCWD, "Deep-EIoU/yolox/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/yolox/data/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=53, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "Deep-EIoU/yolox/data/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(8, 0x584107fa5350 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(8, 0x584107fa5350 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/yolox/exp/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/yolox/exp/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/yolox/models/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/yolox/models/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/yolox/tracking_utils/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 3 entries */, 1048576) = 80
+openat(AT_FDCWD, "Deep-EIoU/yolox/tracking_utils/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+openat(AT_FDCWD, "Deep-EIoU/yolox/utils/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=57, ...}, AT_EMPTY_PATH) = 0
+getdents64(7, 0x584107da4c50 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "Deep-EIoU/yolox/utils/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(7, 0x584107da4c50 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+getdents64(6, 0x584107ea52a0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+getdents64(5, 0x7236a5eff040 /* 0 entries */, 1048576) = 0
+munmap(0x7236a5eff000, 1052672)         = 0
+close(5)                                = 0
+getdents64(4, 0x7236a62ae040 /* 1 entries */, 1048576) = 40
+getdents64(4, 0x7236a62ae040 /* 0 entries */, 1048576) = 0
+munmap(0x7236a62ae000, 1052672)         = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".gitignore", {st_mode=S_IFREG|0644, st_size=255, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/.gitignore", {st_mode=S_IFREG|0644, st_size=110, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/.gitignore", {st_mode=S_IFREG|0644, st_size=24, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs", {st_mode=S_IFDIR|0755, st_size=42, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot", {st_mode=S_IFDIR|0755, st_size=92, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c001.npy", {st_mode=S_IFREG|0644, st_size=23162592, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c003.npy", {st_mode=S_IFREG|0644, st_size=22972068, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c005.npy", {st_mode=S_IFREG|0644, st_size=11180478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c007.npy", {st_mode=S_IFREG|0644, st_size=13268026, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c008.npy", {st_mode=S_IFREG|0644, st_size=19591766, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_00HRwkvvjtQ_c011.npy", {st_mode=S_IFREG|0644, st_size=14340750, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c004.npy", {st_mode=S_IFREG|0644, st_size=12862862, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c005.npy", {st_mode=S_IFREG|0644, st_size=7968850, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c006.npy", {st_mode=S_IFREG|0644, st_size=7608222, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c007.npy", {st_mode=S_IFREG|0644, st_size=6172170, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c008.npy", {st_mode=S_IFREG|0644, st_size=6182110, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_0kUtTtmLaJA_c010.npy", {st_mode=S_IFREG|0644, st_size=6274510, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_2QhNRucNC7E_c017.npy", {st_mode=S_IFREG|0644, st_size=13588478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_4-EmEtrturE_c009.npy", {st_mode=S_IFREG|0644, st_size=5718301, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_4r8QL_wglzQ_c001.npy", {st_mode=S_IFREG|0644, st_size=16811566, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_5ekaksddqrc_c001.npy", {st_mode=S_IFREG|0644, st_size=10508142, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_5ekaksddqrc_c002.npy", {st_mode=S_IFREG|0644, st_size=11786918, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_5ekaksddqrc_c003.npy", {st_mode=S_IFREG|0644, st_size=24238924, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_5ekaksddqrc_c004.npy", {st_mode=S_IFREG|0644, st_size=15927206, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_5ekaksddqrc_c005.npy", {st_mode=S_IFREG|0644, st_size=19276006, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_9MHDmAMxO5I_c002.npy", {st_mode=S_IFREG|0644, st_size=5424777, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_9MHDmAMxO5I_c003.npy", {st_mode=S_IFREG|0644, st_size=5012349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_9MHDmAMxO5I_c004.npy", {st_mode=S_IFREG|0644, st_size=10477866, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_9MHDmAMxO5I_c006.npy", {st_mode=S_IFREG|0644, st_size=5342610, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_9MHDmAMxO5I_c009.npy", {st_mode=S_IFREG|0644, st_size=11490650, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_BgwzTUxJaeU_c008.npy", {st_mode=S_IFREG|0644, st_size=9194422, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_BgwzTUxJaeU_c012.npy", {st_mode=S_IFREG|0644, st_size=11917270, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_BgwzTUxJaeU_c014.npy", {st_mode=S_IFREG|0644, st_size=19925222, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_G-vNjfx1GGc_c004.npy", {st_mode=S_IFREG|0644, st_size=16704698, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_G-vNjfx1GGc_c008.npy", {st_mode=S_IFREG|0644, st_size=9393926, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_G-vNjfx1GGc_c600.npy", {st_mode=S_IFREG|0644, st_size=11215798, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_G-vNjfx1GGc_c601.npy", {st_mode=S_IFREG|0644, st_size=11403074, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_ITo3sCnpw_k_c007.npy", {st_mode=S_IFREG|0644, st_size=20071122, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_ITo3sCnpw_k_c010.npy", {st_mode=S_IFREG|0644, st_size=15813062, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_ITo3sCnpw_k_c011.npy", {st_mode=S_IFREG|0644, st_size=19985510, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_ITo3sCnpw_k_c012.npy", {st_mode=S_IFREG|0644, st_size=22234558, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_cC2mHWqMcjk_c007.npy", {st_mode=S_IFREG|0644, st_size=16172578, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_cC2mHWqMcjk_c008.npy", {st_mode=S_IFREG|0644, st_size=5722938, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_cC2mHWqMcjk_c009.npy", {st_mode=S_IFREG|0644, st_size=10013218, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_dw7LOz17Omg_c053.npy", {st_mode=S_IFREG|0644, st_size=18114414, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_dw7LOz17Omg_c067.npy", {st_mode=S_IFREG|0644, st_size=14278654, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_i2_L4qquVg0_c006.npy", {st_mode=S_IFREG|0644, st_size=24424102, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_i2_L4qquVg0_c007.npy", {st_mode=S_IFREG|0644, st_size=9914426, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_i2_L4qquVg0_c009.npy", {st_mode=S_IFREG|0644, st_size=16281830, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt/v_i2_L4qquVg0_c010.npy", {st_mode=S_IFREG|0644, st_size=16965678, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/.gitignore", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection", {st_mode=S_IFDIR|0755, st_size=8192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-9kabh1K8UA_c008.npy", {st_mode=S_IFREG|0644, st_size=181300, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-9kabh1K8UA_c009.npy", {st_mode=S_IFREG|0644, st_size=309668, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-9kabh1K8UA_c010.npy", {st_mode=S_IFREG|0644, st_size=289590, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c001.npy", {st_mode=S_IFREG|0644, st_size=307615, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c002.npy", {st_mode=S_IFREG|0644, st_size=173649, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c005.npy", {st_mode=S_IFREG|0644, st_size=231205, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c006.npy", {st_mode=S_IFREG|0644, st_size=247473, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c007.npy", {st_mode=S_IFREG|0644, st_size=272871, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c008.npy", {st_mode=S_IFREG|0644, st_size=237259, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c009.npy", {st_mode=S_IFREG|0644, st_size=334801, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c011.npy", {st_mode=S_IFREG|0644, st_size=370287, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c012.npy", {st_mode=S_IFREG|0644, st_size=254147, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c600.npy", {st_mode=S_IFREG|0644, st_size=191223, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_-hhDbvY5aAM_c602.npy", {st_mode=S_IFREG|0644, st_size=195567, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c001.npy", {st_mode=S_IFREG|0644, st_size=435252, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c004.npy", {st_mode=S_IFREG|0644, st_size=253075, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c015.npy", {st_mode=S_IFREG|0644, st_size=255824, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c037.npy", {st_mode=S_IFREG|0644, st_size=330226, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c055.npy", {st_mode=S_IFREG|0644, st_size=415317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c056.npy", {st_mode=S_IFREG|0644, st_size=256589, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c063.npy", {st_mode=S_IFREG|0644, st_size=258367, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c067.npy", {st_mode=S_IFREG|0644, st_size=382835, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c090.npy", {st_mode=S_IFREG|0644, st_size=272349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c103.npy", {st_mode=S_IFREG|0644, st_size=428882, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c111.npy", {st_mode=S_IFREG|0644, st_size=236089, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c113.npy", {st_mode=S_IFREG|0644, st_size=449927, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c601.npy", {st_mode=S_IFREG|0644, st_size=252604, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c602.npy", {st_mode=S_IFREG|0644, st_size=282366, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c603.npy", {st_mode=S_IFREG|0644, st_size=249002, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c606.npy", {st_mode=S_IFREG|0644, st_size=246476, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c609.npy", {st_mode=S_IFREG|0644, st_size=254607, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_1UDUODIBSsc_c615.npy", {st_mode=S_IFREG|0644, st_size=229761, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2BhBRkkAqbQ_c002.npy", {st_mode=S_IFREG|0644, st_size=189027, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c039.npy", {st_mode=S_IFREG|0644, st_size=232787, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c044.npy", {st_mode=S_IFREG|0644, st_size=444671, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c046.npy", {st_mode=S_IFREG|0644, st_size=477101, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c058.npy", {st_mode=S_IFREG|0644, st_size=387303, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c067.npy", {st_mode=S_IFREG|0644, st_size=176010, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c072.npy", {st_mode=S_IFREG|0644, st_size=350299, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c086.npy", {st_mode=S_IFREG|0644, st_size=303345, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c115.npy", {st_mode=S_IFREG|0644, st_size=248786, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c120.npy", {st_mode=S_IFREG|0644, st_size=475536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c128.npy", {st_mode=S_IFREG|0644, st_size=218084, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c135.npy", {st_mode=S_IFREG|0644, st_size=234957, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c136.npy", {st_mode=S_IFREG|0644, st_size=237443, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c600.npy", {st_mode=S_IFREG|0644, st_size=332968, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c601.npy", {st_mode=S_IFREG|0644, st_size=335504, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2ChiYdg5bxI_c602.npy", {st_mode=S_IFREG|0644, st_size=429601, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dnx8BpgUEs_c003.npy", {st_mode=S_IFREG|0644, st_size=87923, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dnx8BpgUEs_c005.npy", {st_mode=S_IFREG|0644, st_size=92834, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dnx8BpgUEs_c006.npy", {st_mode=S_IFREG|0644, st_size=89668, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dnx8BpgUEs_c007.npy", {st_mode=S_IFREG|0644, st_size=188131, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c001.npy", {st_mode=S_IFREG|0644, st_size=96618, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c003.npy", {st_mode=S_IFREG|0644, st_size=125184, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c004.npy", {st_mode=S_IFREG|0644, st_size=135905, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c007.npy", {st_mode=S_IFREG|0644, st_size=96213, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c008.npy", {st_mode=S_IFREG|0644, st_size=273749, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c012.npy", {st_mode=S_IFREG|0644, st_size=104027, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c014.npy", {st_mode=S_IFREG|0644, st_size=211928, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_2Dw9QNH5KtU_c018.npy", {st_mode=S_IFREG|0644, st_size=88573, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_42VrMbd68Zg_c003.npy", {st_mode=S_IFREG|0644, st_size=1148658, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_42VrMbd68Zg_c004.npy", {st_mode=S_IFREG|0644, st_size=267983, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_42VrMbd68Zg_c011.npy", {st_mode=S_IFREG|0644, st_size=327119, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_42VrMbd68Zg_c012.npy", {st_mode=S_IFREG|0644, st_size=289687, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c001.npy", {st_mode=S_IFREG|0644, st_size=366168, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c003.npy", {st_mode=S_IFREG|0644, st_size=503607, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c005.npy", {st_mode=S_IFREG|0644, st_size=450015, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c007.npy", {st_mode=S_IFREG|0644, st_size=216227, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c008.npy", {st_mode=S_IFREG|0644, st_size=174553, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c009.npy", {st_mode=S_IFREG|0644, st_size=165943, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c011.npy", {st_mode=S_IFREG|0644, st_size=313104, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c012.npy", {st_mode=S_IFREG|0644, st_size=297346, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c013.npy", {st_mode=S_IFREG|0644, st_size=319763, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6OLC1-bhioc_c014.npy", {st_mode=S_IFREG|0644, st_size=188446, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6oTxfzKdG6Q_c004.npy", {st_mode=S_IFREG|0644, st_size=189369, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_6oTxfzKdG6Q_c015.npy", {st_mode=S_IFREG|0644, st_size=301690, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c001.npy", {st_mode=S_IFREG|0644, st_size=140882, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c004.npy", {st_mode=S_IFREG|0644, st_size=228016, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c005.npy", {st_mode=S_IFREG|0644, st_size=326301, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c006.npy", {st_mode=S_IFREG|0644, st_size=251191, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c007.npy", {st_mode=S_IFREG|0644, st_size=226287, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_7FTsO8S3h88_c008.npy", {st_mode=S_IFREG|0644, st_size=265816, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_82WN8C8qJmI_c002.npy", {st_mode=S_IFREG|0644, st_size=278005, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_82WN8C8qJmI_c003.npy", {st_mode=S_IFREG|0644, st_size=175707, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_82WN8C8qJmI_c004.npy", {st_mode=S_IFREG|0644, st_size=443453, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_82WN8C8qJmI_c005.npy", {st_mode=S_IFREG|0644, st_size=161203, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_82WN8C8qJmI_c014.npy", {st_mode=S_IFREG|0644, st_size=187057, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c004.npy", {st_mode=S_IFREG|0644, st_size=118533, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c005.npy", {st_mode=S_IFREG|0644, st_size=146292, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c006.npy", {st_mode=S_IFREG|0644, st_size=256255, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c007.npy", {st_mode=S_IFREG|0644, st_size=134535, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c008.npy", {st_mode=S_IFREG|0644, st_size=87572, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_8rG1vjmJHr4_c010.npy", {st_mode=S_IFREG|0644, st_size=90788, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c002.npy", {st_mode=S_IFREG|0644, st_size=98815, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c003.npy", {st_mode=S_IFREG|0644, st_size=182880, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c006.npy", {st_mode=S_IFREG|0644, st_size=89028, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c007.npy", {st_mode=S_IFREG|0644, st_size=258937, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c008.npy", {st_mode=S_IFREG|0644, st_size=148980, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c009.npy", {st_mode=S_IFREG|0644, st_size=294309, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c010.npy", {st_mode=S_IFREG|0644, st_size=140714, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c013.npy", {st_mode=S_IFREG|0644, st_size=115000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c014.npy", {st_mode=S_IFREG|0644, st_size=106900, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c015.npy", {st_mode=S_IFREG|0644, st_size=105414, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c018.npy", {st_mode=S_IFREG|0644, st_size=151666, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_9p0i81kAEwE_c019.npy", {st_mode=S_IFREG|0644, st_size=290487, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_A4OJhlI6hgc_c001.npy", {st_mode=S_IFREG|0644, st_size=300085, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_A4OJhlI6hgc_c002.npy", {st_mode=S_IFREG|0644, st_size=437992, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_A4OJhlI6hgc_c003.npy", {st_mode=S_IFREG|0644, st_size=189733, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_A4OJhlI6hgc_c005.npy", {st_mode=S_IFREG|0644, st_size=274285, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_A4OJhlI6hgc_c601.npy", {st_mode=S_IFREG|0644, st_size=135444, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c003.npy", {st_mode=S_IFREG|0644, st_size=271629, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c004.npy", {st_mode=S_IFREG|0644, st_size=180145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c006.npy", {st_mode=S_IFREG|0644, st_size=154168, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c010.npy", {st_mode=S_IFREG|0644, st_size=164798, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c011.npy", {st_mode=S_IFREG|0644, st_size=247658, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_BdD9xu0E2H4_c013.npy", {st_mode=S_IFREG|0644, st_size=287811, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_DjtFlW2eHFI_c614.npy", {st_mode=S_IFREG|0644, st_size=181333, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_DjtFlW2eHFI_c616.npy", {st_mode=S_IFREG|0644, st_size=198031, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aAb0psypDj4_c003.npy", {st_mode=S_IFREG|0644, st_size=281145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aAb0psypDj4_c006.npy", {st_mode=S_IFREG|0644, st_size=87682, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aAb0psypDj4_c008.npy", {st_mode=S_IFREG|0644, st_size=113638, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aAb0psypDj4_c009.npy", {st_mode=S_IFREG|0644, st_size=144529, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aVfJwdQxCsU_c001.npy", {st_mode=S_IFREG|0644, st_size=232777, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aVfJwdQxCsU_c007.npy", {st_mode=S_IFREG|0644, st_size=168803, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_aVfJwdQxCsU_c015.npy", {st_mode=S_IFREG|0644, st_size=243088, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bQNDRprvpus_c001.npy", {st_mode=S_IFREG|0644, st_size=255195, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bQNDRprvpus_c003.npy", {st_mode=S_IFREG|0644, st_size=142617, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bQNDRprvpus_c005.npy", {st_mode=S_IFREG|0644, st_size=181403, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bQNDRprvpus_c007.npy", {st_mode=S_IFREG|0644, st_size=164440, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bQNDRprvpus_c008.npy", {st_mode=S_IFREG|0644, st_size=143297, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c003.npy", {st_mode=S_IFREG|0644, st_size=106819, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c004.npy", {st_mode=S_IFREG|0644, st_size=88362, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c006.npy", {st_mode=S_IFREG|0644, st_size=162969, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c008.npy", {st_mode=S_IFREG|0644, st_size=119498, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c009.npy", {st_mode=S_IFREG|0644, st_size=84848, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c010.npy", {st_mode=S_IFREG|0644, st_size=94057, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c014.npy", {st_mode=S_IFREG|0644, st_size=111595, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_bhWjlAEICp8_c018.npy", {st_mode=S_IFREG|0644, st_size=162970, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c002.npy", {st_mode=S_IFREG|0644, st_size=140225, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c005.npy", {st_mode=S_IFREG|0644, st_size=89370, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c008.npy", {st_mode=S_IFREG|0644, st_size=90082, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c012.npy", {st_mode=S_IFREG|0644, st_size=123567, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c013.npy", {st_mode=S_IFREG|0644, st_size=117180, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c014.npy", {st_mode=S_IFREG|0644, st_size=79524, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c016.npy", {st_mode=S_IFREG|0644, st_size=145659, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_czYZnO9QxYQ_c020.npy", {st_mode=S_IFREG|0644, st_size=91103, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_foGDoBblREI_c002.npy", {st_mode=S_IFREG|0644, st_size=254811, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_foGDoBblREI_c008.npy", {st_mode=S_IFREG|0644, st_size=184554, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_iF9bKPWdZlc_c001.npy", {st_mode=S_IFREG|0644, st_size=367716, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/detection/v_iF9bKPWdZlc_c003.npy", {st_mode=S_IFREG|0644, st_size=178305, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib/rank_cy.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0755, st_size=1357144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid", {st_mode=S_IFDIR|0755, st_size=78, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build", {st_mode=S_IFDIR|0755, st_size=89, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid", {st_mode=S_IFDIR|0755, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics", {st_mode=S_IFDIR|0755, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/lib.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib", {st_mode=S_IFDIR|0755, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib/rank_cy.o", {st_mode=S_IFREG|0644, st_size=2383552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid", {st_mode=S_IFDIR|0755, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics", {st_mode=S_IFDIR|0755, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/build/temp.linux-x86_64-cpython-37/torchreid/metrics/rank_cylib", {st_mode=S_IFDIR|0755, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid.egg-info/requires.txt", {st_mode=S_IFREG|0644, st_size=168, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid.egg-info", {st_mode=S_IFDIR|0755, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=611, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid", {st_mode=S_IFDIR|0755, st_size=156, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/__pycache__", {st_mode=S_IFDIR|0755, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=465, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data", {st_mode=S_IFDIR|0755, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/__pycache__", {st_mode=S_IFDIR|0755, st_size=154, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/__pycache__/datamanager.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=14533, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/__pycache__/sampler.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6652, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/__pycache__/transforms.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=9666, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3424, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets", {st_mode=S_IFDIR|0755, st_size=67, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/__pycache__", {st_mode=S_IFDIR|0755, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/__pycache__/dataset.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12195, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=764, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/cuhk01.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4094, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/cuhk02.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2926, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/cuhk03.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7061, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/cuhksysu.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1944, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/dukemtmcreid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2601, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/grid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3706, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/ilids.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/market1501.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2862, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/msmt17.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2503, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/prid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3611, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/sensereid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2558, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/university1652.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3841, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/image/__pycache__/viper.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3462, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=419, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__", {st_mode=S_IFDIR|0755, st_size=188, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__/dukemtmcvidreid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3590, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__/ilidsvid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4509, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__/mars.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4243, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/data/datasets/video/__pycache__/prid2011.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2576, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=427, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine", {st_mode=S_IFDIR|0755, st_size=67, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/__pycache__", {st_mode=S_IFDIR|0755, st_size=78, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/__pycache__/engine.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12724, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/__pycache__", {st_mode=S_IFDIR|0755, st_size=113, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/__pycache__/softmax.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/image/__pycache__/triplet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3757, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/__pycache__", {st_mode=S_IFDIR|0755, st_size=113, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/__pycache__/softmax.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3428, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/engine/video/__pycache__/triplet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3928, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=732, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/__pycache__", {st_mode=S_IFDIR|0755, st_size=139, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/__pycache__/cross_entropy_loss.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2287, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/losses/__pycache__/hard_mine_triplet_loss.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1931, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=341, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics", {st_mode=S_IFDIR|0755, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/__pycache__", {st_mode=S_IFDIR|0755, st_size=146, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/__pycache__/accuracy.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1337, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/__pycache__/distance.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2471, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/__pycache__/rank.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5091, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=168, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib", {st_mode=S_IFDIR|0755, st_size=105, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/__pycache__", {st_mode=S_IFDIR|0755, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/rank_cy.c", {st_mode=S_IFREG|0644, st_size=1317723, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/metrics/rank_cylib/rank_cy.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0755, st_size=1357144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3016, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/densenet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=8571, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/hacnn.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=10807, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/inceptionresnetv2.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=9713, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/inceptionv4.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=10098, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/mlfn.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5702, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/mobilenetv2.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7370, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/mudeep.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6741, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/nasnet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=19317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/osnet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13274, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/osnet_ain.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=14582, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/pcb.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=8142, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/resnet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=11079, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/resnet_ibn_a.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7751, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/resnet_ibn_b.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7173, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/resnetmid.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7630, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/senet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=14565, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/shufflenet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5292, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/shufflenetv2.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6681, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/squeezenet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6245, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/models/__pycache__/xception.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7178, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=314, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/__pycache__", {st_mode=S_IFDIR|0755, st_size=152, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/__pycache__/lr_scheduler.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2149, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/__pycache__/optimizer.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4486, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/optim/__pycache__/radam.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7287, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=444, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils", {st_mode=S_IFDIR|0755, st_size=65, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/avgmeter.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2588, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/feature_extractor.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3863, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/loggers.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5099, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/model_complexity.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=9322, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/reidtools.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3819, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/rerank.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3376, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/tools.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3982, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/__pycache__/torchtools.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=8452, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/reid/torchreid/utils/feature_extractor.py", {st_mode=S_IFREG|0644, st_size=4616, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/.gitignore", {st_mode=S_IFREG|0644, st_size=607, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_T.py", {st_mode=S_IFREG|0644, st_size=14540, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_T_wgt.py", {st_mode=S_IFREG|0644, st_size=14148, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_T_wgt_bbox_emb.py", {st_mode=S_IFREG|0644, st_size=16396, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_TandV_wgt.py", {st_mode=S_IFREG|0644, st_size=14820, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_TandV_wgt_bbox_emb.py", {st_mode=S_IFREG|0644, st_size=16540, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_new_T_wgt.py", {st_mode=S_IFREG|0644, st_size=15725, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/AFD_new_TandV_wgt.py", {st_mode=S_IFREG|0644, st_size=16397, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/DeepEIoU_T.py", {st_mode=S_IFREG|0644, st_size=13826, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/DeepEIoU_T_wgt.py", {st_mode=S_IFREG|0644, st_size=15187, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/DeepEIoU_TandV.py", {st_mode=S_IFREG|0644, st_size=13701, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/DeepEIoU_TandV_wgt.py", {st_mode=S_IFREG|0644, st_size=14375, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/demo2.py", {st_mode=S_IFREG|0644, st_size=12874, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/get_det.py", {st_mode=S_IFREG|0644, st_size=12267, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/get_det_all.sh", {st_mode=S_IFREG|0755, st_size=927, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/get_emb.py", {st_mode=S_IFREG|0644, st_size=12800, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/get_emb_all.sh", {st_mode=S_IFREG|0755, st_size=950, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/get_emb_wgt.py", {st_mode=S_IFREG|0644, st_size=13226, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/open_numpyfile.py", {st_mode=S_IFREG|0644, st_size=201, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_test_DeepEIoU.sh", {st_mode=S_IFREG|0755, st_size=741, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_train_AFD.sh", {st_mode=S_IFREG|0755, st_size=1257, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_train_DeepEIoU.sh", {st_mode=S_IFREG|0755, st_size=744, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_val_AFD.sh", {st_mode=S_IFREG|0755, st_size=1285, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_val_DE.sh", {st_mode=S_IFREG|0755, st_size=946, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/run_all_val_DE_wgt.sh", {st_mode=S_IFREG|0755, st_size=950, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tools/sport_interpolation.py", {st_mode=S_IFREG|0644, st_size=5076, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/.gitignore", {st_mode=S_IFREG|0644, st_size=85, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/AFD.py", {st_mode=S_IFREG|0644, st_size=22109, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/AFD_w_emb.py", {st_mode=S_IFREG|0644, st_size=22106, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/DHMS.py", {st_mode=S_IFREG|0644, st_size=16727, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/Deep_EIoU.py", {st_mode=S_IFREG|0644, st_size=17912, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/ADD.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13122, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/AFD.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12803, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/AFD_new.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13008, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/AFD_w_emb.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13080, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/APV.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12740, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/DHMS.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12537, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/DePA.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12817, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13425, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU2.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12933, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU2_wothresh.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=12812, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3a.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3b.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13027, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3c.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3d.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13027, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3e.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13209, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3f.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=13209, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3g.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=16503, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/Deep_EIoU3g1.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=16242, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/basetrack.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2073, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/kalman_filter.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7961, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/__pycache__/matching.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=33242, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/matching.py", {st_mode=S_IFREG|0644, st_size=48731, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/tracking_utils/__pycache__/timer.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1119, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/tracking_utils", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/tracker/tracking_utils/__pycache__", {st_mode=S_IFDIR|0755, st_size=42, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/__pycache__/yolox_x_ch_sportsmot.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3322, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox", {st_mode=S_IFDIR|0755, st_size=125, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/__pycache__", {st_mode=S_IFDIR|0755, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=413, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data", {st_mode=S_IFDIR|0755, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__/data_augment.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=7312, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__/data_prefetcher.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2480, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__/dataloading.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5375, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/__pycache__/samplers.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3948, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=312, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/__pycache__", {st_mode=S_IFDIR|0755, st_size=160, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/__pycache__/datasets_wrapper.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4231, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/__pycache__/mosaicdetection.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6188, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/data/datasets/__pycache__/mot.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4733, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=225, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp/__pycache__", {st_mode=S_IFDIR|0755, st_size=149, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp/__pycache__/base_exp.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2738, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp/__pycache__/build.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1467, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/exp/__pycache__/yolox_base.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=5988, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=402, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/darknet.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4596, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/losses.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2888, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/network_blocks.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6955, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/yolo_fpn.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2542, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/yolo_head.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=11806, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/yolo_pafpn.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2480, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/models/__pycache__/yolox.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1285, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/tracking_utils/__pycache__/timer.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1117, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/tracking_utils", {st_mode=S_IFDIR|0755, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/tracking_utils/__pycache__", {st_mode=S_IFDIR|0755, st_size=42, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/__init__.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils", {st_mode=S_IFDIR|0755, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/allreduce_norm.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3249, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/boxes.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3989, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/checkpoint.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1099, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/demo_utils.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2557, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/dist.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=6460, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/ema.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2675, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/logger.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2844, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/lr_scheduler.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=3930, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/metric.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4433, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/model_utils.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=2681, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/setup_env.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1292, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/__pycache__/visualize.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=4260, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/yolox/utils/visualize.py", {st_mode=S_IFREG|0644, st_size=6485, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "README.md", {st_mode=S_IFREG|0644, st_size=42, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "__pycache__/custom_mot_challenge.cpython-37.pyc", {st_mode=S_IFREG|0644, st_size=1812, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "__pycache__", {st_mode=S_IFDIR|0755, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "Deep-EIoU/.gitignore", {st_mode=S_IFREG|0644, st_size=110, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "Deep-EIoU/.gitignore", O_RDONLY) = 4
+openat(AT_FDCWD, "/etc/gitattributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/zabu/.config/git/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".gitattributes", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/info/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "Deep-EIoU/.gitattributes", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+read(4, "interpolation_DeepEIoU2/\n\ninterp"..., 110) = 110
+openat(AT_FDCWD, ".git/objects/info/alternates", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/pack/multi-pack-index", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/pack", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x584107ea52a0 /* 6 entries */, 1048576) = 336
+access(".git/objects/pack/pack-12e42b8c9af98159c74bc70011484a3066bb6825.keep", F_OK) = -1 ENOENT (No such file or directory)
+access(".git/objects/pack/pack-12e42b8c9af98159c74bc70011484a3066bb6825.promisor", F_OK) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/objects/pack/pack-12e42b8c9af98159c74bc70011484a3066bb6825.pack", {st_mode=S_IFREG|0444, st_size=38658775, ...}, 0) = 0
+access(".git/objects/pack/pack-2f1c4e7b1a0249ed71a9eef9c5e5efd712bdb1a3.keep", F_OK) = -1 ENOENT (No such file or directory)
+access(".git/objects/pack/pack-2f1c4e7b1a0249ed71a9eef9c5e5efd712bdb1a3.promisor", F_OK) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/objects/pack/pack-2f1c4e7b1a0249ed71a9eef9c5e5efd712bdb1a3.pack", {st_mode=S_IFREG|0444, st_size=736748679, ...}, 0) = 0
+getdents64(5, 0x584107ea52a0 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, ".git/objects/pack/pack-12e42b8c9af98159c74bc70011484a3066bb6825.idx", O_RDONLY|O_CLOEXEC) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=13728, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 13728, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7236a6473000
+close(5)                                = 0
+openat(AT_FDCWD, ".git/objects/pack/pack-2f1c4e7b1a0249ed71a9eef9c5e5efd712bdb1a3.idx", O_RDONLY|O_CLOEXEC) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=1100, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1100, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7236a64b0000
+close(5)                                = 0
+access(".git/objects/db/9aae7871c6513ced3dc997cf0fa53a2bfee761", F_OK) = 0
+utimensat(AT_FDCWD, ".git/objects/db/9aae7871c6513ced3dc997cf0fa53a2bfee761", NULL, 0) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "git_trace.log", 
