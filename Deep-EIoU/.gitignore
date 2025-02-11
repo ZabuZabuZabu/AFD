@@ -8,6 +8,5 @@ SCT_DHMS/
 
 checkpoints/
 
-detection/
-
-embedding/
+detection/*
+embedding/*
