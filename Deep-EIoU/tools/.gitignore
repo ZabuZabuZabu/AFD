@@ -21,7 +21,6 @@ DeepEIoU_T_wgt.py
 DeepEIoU_T.py
 DeepEIoU_TandV_wgt.py
 DeepEIoU_TandV.py
-demo.py
 get_det_all.sh
 get_det.py
 get_emb_all.sh
