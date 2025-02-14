@@ -27,7 +27,7 @@ cd ..
 To reproduce on the SportsMOT dataset, you need to download the detection and embedding files from [drive](https://drive.google.com/drive/folders/14gh9e5nQhqHsw77EfxZaUyn9NgPP0-Tq?usp=sharing)
 
 Please download these files and put them in the corresponding folder.
-These files are detection and embedding results of SportsMOT test data.
+These files are detection and embedding results of SportsMOT test data from [DeepEIoU Github](https://github.com/hsiangwei0903/Deep-EIoU/tree/main).
 
 ```
 {AFD Root}
@@ -51,7 +51,7 @@ python tools/sport_track.py --root_path <AFD Root>
 python tools/sport_interpolation.py --root_path <AFD Root>
 ```
 
-## run validation or traning data 
+### 3. Run validation or traning data 
 If you want to run validation or training data of SportsMOT, you have to download SportsMOT dataset from [SportsMOT Github](https://github.com/MCG-NJU/SportsMOT) at first.
 Run the following commands to get tracking results of validation or training data.
 
