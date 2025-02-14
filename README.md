@@ -27,6 +27,7 @@ cd ..
 To reproduce on the SportsMOT dataset, you need to download the detection and embedding files from [drive](https://drive.google.com/drive/folders/14gh9e5nQhqHsw77EfxZaUyn9NgPP0-Tq?usp=sharing)
 
 Please download these files and put them in the corresponding folder.
+These files are detection and embedding results of SportsMOT test data.
 
 ```
 {AFD Root}
@@ -43,12 +44,22 @@ Please download these files and put them in the corresponding folder.
 
 ### 2. Run tracking on SportsMOT dataset
 Run the following commands, you should see the tracking result for each sequences in the interpolation folder.
-Please directly zip the tracking results and submit to the [SportsMOT evaluation server](https://codalab.lisn.upsaclay.fr/competitions/12424#participate).
+To get test data results, please directly zip the tracking results and submit to the [SportsMOT evaluation server](https://codalab.lisn.upsaclay.fr/competitions/12424#participate).
 
 ```
 python tools/sport_track.py --root_path <AFD Root>
 python tools/sport_interpolation.py --root_path <AFD Root>
 ```
+
+## run validation or traning data 
+If you want to run validation or training data of SportsMOT, you have to download SportsMOT dataset from [SportsMOT Github](https://github.com/MCG-NJU/SportsMOT) at first.
+Run the following commands to get tracking results of validation or training data.
+
+```
+./tools/run_all_train_AFD.sh --output_dir <OUTPUT FOLDER PATH>
+./tools/run_all_val_AFD.sh --output_dir <OUTPUT FOLDER PATH>
+```
+Don't forget to change path for dataset and checkpoints file in those code.
 
 ## Demo on custom dataset
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-VAL_DIR="/home/zabu/Deep-EIoU/sportsmot_publish/dataset/val"
-CKPT_PATH="/home/zabu/Deep-EIoU/Deep-EIoU/checkpoints/best_ckpt.pth.tar"
-EMB_DIR="/home/zabu/Deep-EIoU/Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt"
+VAL_DIR="/home/zabu/Deep-EIoU/sportsmot_publish/dataset/val" #path of validation data
+CKPT_PATH="/home/zabu/Deep-EIoU/Deep-EIoU/checkpoints/best_ckpt.pth.tar" #path of checkpoints file
+#EMB_DIR="/home/zabu/Deep-EIoU/Deep-EIoU/YOLOX_outputs/yolox_x_ch_sportsmot/emb_gt"
 
 # 引数を解析
 while getopts v:c:o: flag
