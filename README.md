@@ -84,6 +84,16 @@ Demo on your custom video
 python tools/demo.py --path <your video path>
 ```
 
+### 3. Demo on SportsMOT video
+Run the following commands.
+```
+python tools/AFD_T.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> -ckpt <Checkpoints file path>
+```
+if you want to use GT BBOX, run following the commands.
+```
+python tools/AFD_T_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> -ckpt <Checkpoints file path>
+```
+
 ## Acknowledgements
 The code is based on [Deep-EIoU](https://github.com/hsiangwei0903/Deep-EIoU)
 
