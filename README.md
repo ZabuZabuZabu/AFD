@@ -11,7 +11,7 @@ conda activate AFD
 
 # Install pytorch with the proper cuda version to suit your machine
 # We are using torch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 with cuda==11.6
-# Folder name is DeepEIoU because this code is based on Deep-EIoU. And to compare with DeepEIoU, there are code for Deep-EIoU in this folder.
+# Sorry about folder name is DeepEIoU, it's named like that because this code is based on Deep-EIoU. i will change it later.
 
 cd DeepEIoU/reid
 pip install -r requirements.txt
