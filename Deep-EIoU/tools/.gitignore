@@ -31,3 +31,5 @@ run_all_test_DeepEIoU.sh
 run_all_train_DeepEIoU.sh
 run_all_val_DE_wgt.sh
 run_all_val_DE.sh
+AFD_T_wgt_bbox_emb.py
+AFD_TandV_wgt_bbox_emb.py
