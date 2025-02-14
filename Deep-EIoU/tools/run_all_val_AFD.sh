@@ -35,6 +35,8 @@ for m_thre in "${match_thresh_values[@]}"; do
       echo "Processing directory: $VIDEO_DIR"
       
       python tools/AFD_T.py --img_folder "$IMG_FOLDER" --ckpt "$CKPT_PATH" --output_dir "$OUTPUT_SUBDIR"
+      #if you want to use GT BBOX, use following code
+      #python tools/AFD_T.py --img_folder "$IMG_FOLDER" --ckpt "$CKPT_PATH" --output_dir "$OUTPUT_SUBDIR"
     done
   done
 done
