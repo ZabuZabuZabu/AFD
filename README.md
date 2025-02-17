@@ -1,6 +1,6 @@
 # AFD
 ## Association with Formation Distance (AFD)
-AFD is a MOT method using relative spatial relationship of objects. Using relative spatial relationship 
+AFD is a MOT method using relative spatial relationship of objects. 
 
 ## Setup Instructions
 
@@ -21,51 +21,19 @@ python setup.py develop
 cd ..
 ```
 
-## Reproduce on SportsMOT dataset
-
-### 1. Data preparation for reproduce on SportsMOT dataset
-
-To reproduce on the SportsMOT dataset, you need to download the detection and embedding files from [drive](https://drive.google.com/drive/folders/14gh9e5nQhqHsw77EfxZaUyn9NgPP0-Tq?usp=sharing)
-
-Please download these files and put them in the corresponding folder.
-These files are detection and embedding results of SportsMOT test data from [DeepEIoU Github](https://github.com/hsiangwei0903/Deep-EIoU/tree/main).
-
+## Download SporsMOT dataset
+Please Sign up in [codalab](https://codalab.lisn.upsaclay.fr/competitions/12424#participate-get-data)
+Download links are available in Participate/Get Data named "sportsmot_publish"
+And put that folder to your project like following directory structure.
 ```
 {AFD Root}
    |——————Deep-EIoU
-   └——————detection
-   |        └——————v_-9kabh1K8UA_c008.npy
-   |        └——————v_-9kabh1K8UA_c009.npy
-   |        └——————...
-   └——————embedding
-            └——————v_-9kabh1K8UA_c008.npy
-            └——————v_-9kabh1K8UA_c009.npy
-            └——————...
+   |——————SportsMOT(folder for evaluation)
+   |——————sportsmot_publish
 ```
 
-### 2. Run tracking on SportsMOT dataset
-Run the following commands, you should see the tracking result for each sequences in the interpolation folder.
-To get test data results, please directly zip the tracking results and submit to the [SportsMOT evaluation server](https://codalab.lisn.upsaclay.fr/competitions/12424#participate).
-
-```
-python tools/sport_track.py --root_path <AFD Root>
-python tools/sport_interpolation.py --root_path <AFD Root>
-```
-
-### 3. Run validation or traning data 
-If you want to run validation or training data of SportsMOT, you have to download SportsMOT dataset from [SportsMOT Github](https://github.com/MCG-NJU/SportsMOT) at first.
-Run the following commands to get tracking results of validation or training data.
-
-```
-./tools/run_all_train_AFD.sh --output_dir <OUTPUT FOLDER PATH>
-./tools/run_all_val_AFD.sh --output_dir <OUTPUT FOLDER PATH>
-```
-Don't forget to change path for dataset and checkpoints file in those code.
-
-## Demo on custom dataset
-
-### 1. Model preparation for demo on custom dataset
-To demo on your custom dataset, download the detector and ReID model from [drive](https://drive.google.com/drive/folders/1wItcb0yeGaxOS08_G9yRWBTnpVf0vZ2w) and put them in the corresponding folder.
+## Download checkpoint file
+Download the detector and ReID model from [drive](https://drive.google.com/drive/folders/1wItcb0yeGaxOS08_G9yRWBTnpVf0vZ2w) and put them in the corresponding folder.
 
 ```
 {AFD Root}
@@ -75,35 +43,61 @@ To demo on your custom dataset, download the detector and ReID model from [drive
                 └——————sports_model.pth.tar-60 (OSNet ReID Model)
 ```
 
-### 2. Demo on custom dataset
-Demo on our provided video
-```
-python tools/demo.py
-```
-Demo on your custom video
+## Demo on your original video
+Run the following commands.
 ```
 python tools/demo.py --path <your video path>
 ```
 
-### 3. Demo on SportsMOT video
+## Run AFD on SportsMOT video
 Run the following commands.
 ```
-python tools/AFD_T.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> -ckpt <Checkpoints file path>
-```
-if you want to use GT BBOX, run following the commands.
-```
-python tools/AFD_T_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> -ckpt <Checkpoints file path>
+python tools/AFD_T.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
 ```
 
-### 4.Evaluate your tracking results
+img_folder is a folder named [VIDE_NAME] that you can see in dataset directry like this.
+```
+sportsmot_publish
+└—dataset
+     └—train
+          |——VIDEO_NAME1
+          |    └——gt
+          |        └——img1
+          |              └—000001.jpg
+          |              └—000002.jpg
+          |                    :
+          |
+          |——VIDEO_NAME2                 
+```
+
+if you want to use GT BBOX, run the following command.
+```
+python tools/AFD_T_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
+```
+
+if you want video results, run the following command (this code use GT BBOX)
+```
+python tools/AFD_TandV_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
+```
+
+## Run AFD on validation or traning data of SportsMOT
+Run the following commands to get tracking results of validation or training data.
+
+```
+./tools/run_all_train_AFD.sh --output_dir <OUTPUT FOLDER PATH>
+./tools/run_all_val_AFD.sh --output_dir <OUTPUT FOLDER PATH>
+```
+Don't forget to change the path for dataset and checkpoints file in those code.
+
+## Evaluate your tracking results
 Put your traking results to AFD/SportsMOT/codes/evaluation/TrackEval/data/res/sportsmot-val .
 Folder which includes tracking datas must be following directory structure.
 ```
 sportsmot-val
    └———folder named [tracker name] # like DeepEIoU
             └———data
-                  └——————v_-9kabh1K8UA_c008.npy
-                  └——————v_-9kabh1K8UA_c009.npy
+                  └——————v_-9kabh1K8UA_c008.txt
+                  └——————v_-9kabh1K8UA_c009.txt
                   └——————...
 ```
 
