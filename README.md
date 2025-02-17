@@ -1,5 +1,6 @@
 # AFD
-Association with Formation Distance
+## Association with Formation Distance (AFD)
+AFD is a MOT method using relative spatial relationship of objects. Using relative spatial relationship 
 
 ## Setup Instructions
 
