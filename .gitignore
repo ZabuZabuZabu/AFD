@@ -1,5 +1,3 @@
-SportsMOT/
-
 __pycache__/
 
 drow_line_to_picture/
@@ -13,8 +11,6 @@ NotSportsMOT_Videos/
 result/
 
 SCT_DeepEIoU1/
-
-#SportsMOT/
 
 sportsmot_publish/
 
