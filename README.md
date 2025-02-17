@@ -95,6 +95,24 @@ if you want to use GT BBOX, run following the commands.
 python tools/AFD_T_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> -ckpt <Checkpoints file path>
 ```
 
+### 4.Evaluate your tracking results
+Put your traking results to AFD/SportsMOT/codes/evaluation/TrackEval/data/res/sportsmot-val .
+Folder which includes tracking datas must be following directory structure.
+```
+sportsmot-val
+   └———folder named [tracker name] # like DeepEIoU
+            └———data
+                  └——————v_-9kabh1K8UA_c008.npy
+                  └——————v_-9kabh1K8UA_c009.npy
+                  └——————...
+```
+
+After putting your tracking resutlts to directory as above, run the following commands. Then you will get evaluation results in output directory(SportsMOT/codes/evaluation/TrackEval/output)
+```
+cd AFD/SportsMOT/codes/evaluation/TrackEval
+python evaluate.sh
+```
+
 ## Acknowledgements
 The code is based on [Deep-EIoU](https://github.com/hsiangwei0903/Deep-EIoU)
 
