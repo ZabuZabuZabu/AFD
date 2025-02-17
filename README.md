@@ -23,7 +23,9 @@ cd ..
 
 ## Download SporsMOT dataset
 Please Sign up in [codalab](https://codalab.lisn.upsaclay.fr/competitions/12424#participate-get-data)
+
 Download links are available in Participate/Get Data named "sportsmot_publish"
+
 And put that folder to your project like following directory structure.
 ```
 {AFD Root}
@@ -70,12 +72,12 @@ sportsmot_publish
           |——VIDEO_NAME2                 
 ```
 
-if you want to use GT BBOX, run the following command.
+If you want to use GT BBOX, run the following command.
 ```
 python tools/AFD_T_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
 ```
 
-if you want video results, run the following command (this code use GT BBOX)
+If you want video results, run the following command (this code use GT BBOX)
 ```
 python tools/AFD_TandV_wgt.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
 ```
@@ -90,7 +92,8 @@ Run the following commands to get tracking results of validation or training dat
 Don't forget to change the path for dataset and checkpoints file in those code.
 
 ## Evaluate your tracking results
-Put your traking results to AFD/SportsMOT/codes/evaluation/TrackEval/data/res/sportsmot-val .
+Put your tracking results in the corresponding folder.
+
 Folder which includes tracking datas must be following directory structure.
 ```
 sportsmot-val
@@ -101,7 +104,9 @@ sportsmot-val
                   └——————...
 ```
 
-After putting your tracking resutlts to directory as above, run the following commands. Then you will get evaluation results in output directory(SportsMOT/codes/evaluation/TrackEval/output)
+After putting your tracking resutlts to directory as above, run the following commands.
+
+Then you will get evaluation results in output directory(SportsMOT/codes/evaluation/TrackEval/output)
 ```
 cd AFD/SportsMOT/codes/evaluation/TrackEval
 python evaluate.sh
