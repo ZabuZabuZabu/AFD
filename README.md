@@ -57,7 +57,7 @@ Run the following commands.
 python tools/AFD_T.py --img_folder <img_folder path of SportsMOT> --output_dir <Output folder path> 
 ```
 
-img_folder is a folder named [VIDE_NAME] that you can see in dataset directry like this.
+img_folder is a folder named [VIDEO_NAME] that you can see in dataset directry like this.
 ```
 sportsmot_publish
 └—dataset
@@ -93,16 +93,16 @@ Run the following commands to get tracking results of validation or training dat
 ./tools/run_all_train_AFD.sh --output_dir <OUTPUT FOLDER PATH>
 ./tools/run_all_val_AFD.sh --output_dir <OUTPUT FOLDER PATH>
 ```
-Don't forget to change the path for dataset and checkpoints file in those code.
+Don't forget to change the path for dataset and checkpoints file in these code.
 
 ## Evaluate your tracking results
 Put your tracking results in the corresponding folder.
 
-Folder which includes tracking datas must be following directory structure.
+The folder which includes tracking results must be following directory structure. 
 ```
 sportsmot-val
-   └———folder named [tracker name] # like DeepEIoU
-            └———data
+   └———Folder for tracking results(Any folder name is fine)
+            └———data(Don't change this folder name)
                   └——————v_-9kabh1K8UA_c008.txt
                   └——————v_-9kabh1K8UA_c009.txt
                   └——————...
