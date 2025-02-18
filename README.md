@@ -63,13 +63,17 @@ sportsmot_publish
 └—dataset
      └—train
           |——VIDEO_NAME1
-          |    └——gt
-          |        └——img1
-          |              └—000001.jpg
-          |              └—000002.jpg
-          |                    :
+          |    |——gt
+          |    |——img1
+          |    |    └—000001.jpg
+          |    |    └—000002.jpg
+          |    |                :
+          |    |
+          |    |——seqinfo.ini
           |
-          |——VIDEO_NAME2                 
+          |——VIDEO_NAME2 
+          |——VIDEO_NAME3
+                   :     
 ```
 
 If you want to use GT BBOX, run the following command.
