@@ -464,10 +464,10 @@ class AFD(object):
             emb_dists2 = matching.embedding_distance(r_tracked_stracks, detections_second) / 2.0
             emb_dists2[emb_dists2 > self.appearance_thresh] = 1.0
             emb_dists2[for_dists_mask2] = 1.0 #Cpos閾値以上のものは１にする
-            dists2 = a*emb_dists2 + (1-a)*for_dists2
+            # dists2 = a*emb_dists2 + (1-a)*for_dists2
             # dists2 = for_dists2
             # dists2 = np.minimum(emb_dists2, for_dists2)#パターン２
-            # dists2 = emb_dists2
+            dists2 = emb_dists2#に段階目は外観特徴のみ
         else:
             dists2 = for_dists2
 
