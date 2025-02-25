@@ -5,7 +5,7 @@ sys.path.append('.')
 import numpy as np
 from loguru import logger
 from tracker.tracking_utils.timer import Timer
-from tracker.AFD import AFD
+from tracker.AFD_w_emb import AFD
 
 # Global
 trackerTimer = Timer()
@@ -13,7 +13,7 @@ timer = Timer()
 
 
 def make_parser():
-    parser = argparse.ArgumentParser("DeepEIoU2 For Evaluation!")
+    parser = argparse.ArgumentParser("AFD For Evaluation!")
 
     parser.add_argument("--root_path", default="/home/zabu/Deep-EIoU/Deep-EIoU", type=str)
     parser.add_argument("--benchmark", dest="benchmark", type=str, default='MOT17', help="benchmark to evaluate: MOT17 | MOT20")
@@ -37,7 +37,7 @@ def make_parser():
     parser.add_argument("--track_low_thresh", default=0.1, type=float, help="lowest detection threshold valid for tracks")
     parser.add_argument("--new_track_thresh", default=0.7, type=float, help="new track thresh")
     parser.add_argument("--track_buffer", type=int, default=60, help="the frames for keep lost tracks")
-    parser.add_argument("--match_thresh", type=float, default=0.8, help="matching threshold for tracking")
+    parser.add_argument("--match_thresh", type=float, default=0.5, help="matching threshold for tracking")
     parser.add_argument("--aspect_ratio_thresh", type=float, default=1.6, help="threshold for filtering out boxes of which aspect ratio are above the given value.")
     parser.add_argument('--min_box_area', type=float, default=10, help='filter out tiny boxes')
     parser.add_argument("--nms_thres", type=float, default=0.7, help='nms threshold')
@@ -139,7 +139,7 @@ def main():
     args = make_parser().parse_args()
     data_path = args.root_path
     seq_path =  os.path.join(data_path,args.det_path)
-    os.makedirs(os.path.join(data_path,'SCT_DeepEIoU2'), exist_ok=True)
+    os.makedirs(os.path.join(data_path,'SCT_AFD'), exist_ok=True)
     
     seqs = os.listdir(seq_path)
     seqs = [path.replace('.npy','') for path in seqs if path.endswith('.npy')]
@@ -156,7 +156,7 @@ def main():
         
         embeddings = np.load(os.path.join(data_path,args.emb_path,'{}.npy'.format(seq)),allow_pickle=True)
             
-        sct_output_path = os.path.join(data_path,'SCT_DeepEIoU2','{}.txt'.format(seq))
+        sct_output_path = os.path.join(data_path,'SCT_AFD','{}.txt'.format(seq))
         
         # SCT tracking
         image_track(detections, embeddings, sct_output_path, args)
